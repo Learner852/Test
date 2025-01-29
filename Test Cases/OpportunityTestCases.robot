@@ -14,4 +14,3 @@ Test Case which will pass its own value
     [Template]     accountCreation
     condalia    7846513213
 
-*** Keywords ***
