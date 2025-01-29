@@ -77,9 +77,7 @@ accountCreation
     [Arguments]    ${AccountName}             ${Phone}
     Home
     LaunchApp      Sales
-
     ClickText      Accounts
     ClickUntil     Select a record type        New                         timeout=0
     ClickText      Next                        anchor=Account page for creating volunteer organizations
-
     TypeText       *Account Name               ${AccountName}             timeout=0
