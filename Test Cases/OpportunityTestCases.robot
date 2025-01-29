@@ -17,7 +17,7 @@ Account creation    ${Account Name}   ${Phone}
 
 Test Case which will pass its own value 
     [Documentation]       this test case uses its own argument to be passed to the Account creation keyword
-    NameAccount       
+    NameAccount       7846513213
 
 *** keywords ***
 Accountcreation
