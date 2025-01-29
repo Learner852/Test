@@ -23,7 +23,7 @@ Test Case which will pass its own value
 
 *** keywords ***
 Accountcreation
-    [Arguments]               ${Account Name}    ${Phone}        ${Fax}        ${Website}        ${Type}        ${Industry}    ${Annual Revenue}
+    [Arguments]               ${Account Name}  
     Home
     LaunchApp                 Sales
 
@@ -32,16 +32,6 @@ Accountcreation
     ClickText                 Next    anchor=Account page for creating volunteer organizations
 
     TypeText                  *Account Name               ${Account Name}      timeout=0
-    TypeText                  Phone                       ${Phone}             anchor=Fax        timeout=0
-    TypeText                  Fax                         ${Fax}
-    TypeText                  Website                     ${Website}
-    TypeText                  Type                        ${Type}
-    TypeText                  Industry                    ${Industry}
-    TypeText                  Annual Revenue              ${Annual Revenue}    anchor=Industry
-    ClickElement              xpath=//button[@name='SaveEdit']                 timeout=0
+   
 
-    #${account_name}           Set Variable       ${Account Name} 
-    #${account_phone}          Set Variable       ${Phone}
-    #${account_website}        Set Variable       ${Website}
-    #${account_fax}            Set Variable       ${Fax}
-    #${account_type}           Set Variable       ${Type}
+    
