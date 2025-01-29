@@ -11,11 +11,11 @@ Test Template                 AccountCreation
 
 *** Test Cases ***
 Test Case which will pass its own value 
-    [Template]               AccountCreation    
+    [Template]               accountCreation    
     NameAccount              7846513213
 
 *** Keywords ***
-AccountCreation
+accountCreation
     [Arguments]               ${Account Name}   ${Phone}
     Home
     LaunchApp                 Sales
