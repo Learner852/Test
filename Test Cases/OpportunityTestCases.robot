@@ -2,27 +2,26 @@
 # before running this suite.
 
 *** Settings ***
-Resource                      ../Resources/common.robot
-Suite Setup                   Setup Browser
-Suite Teardown                End suite
-Library                       DataDriver        reader_class=TestDataApi        name=Book1.csv
-Test Template                 accountCreation
+Resource           ../Resources/common.robot
+Suite Setup        Setup Browser
+Suite Teardown     End suite
+Library            DataDriver                  reader_class=TestDataApi    name=Book1.csv
+Test Template      accountCreation
 # also when using the Test template only the test case which can implement the test template can be written in this file
 
 *** Test Cases ***
 Test Case which will pass its own value 
-    [Template]               accountCreation    
-    NameAccount              7846513213
+    [Template]     accountCreation
+    NameAccount    7846513213
 
 *** Keywords ***
 accountCreation
-    [Arguments]               ${Account Name}   ${Phone}
+    [Arguments]    ${Account Name}             ${Phone}
     Home
-    LaunchApp                 Sales
+    LaunchApp      Sales
 
-    ClickText                 Accounts
-    ClickUntil                Select a record type         New                 timeout=0
-    ClickText                 Next    anchor=Account page for creating volunteer organizations
+    ClickText      Accounts
+    ClickUntil     Select a record type        New                         timeout=0
+    ClickText      Next                        anchor=Account page for creating volunteer organizations
 
-    TypeText                  *Account Name               ${Account Name}      timeout=0
-   
+    TypeText       *Account Name               ${Account Name}             timeout=0
