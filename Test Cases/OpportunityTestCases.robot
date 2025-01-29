@@ -6,17 +6,17 @@ Resource                      ../Resources/common.robot
 Suite Setup                   Setup Browser
 Suite Teardown                End suite
 Library                       DataDriver        reader_class=TestDataApi        name=Book1.csv
-Test Template                 Accountcreation
+Test Template                 AccountCreation
 # also when using the Test template only the test case which can implement the test template can be written in this file
 
 *** Test Cases ***
 Test Case which will pass its own value 
     [Documentation]       this test case uses its own argument to be passed to the Account creation keyword
-    [Template]            Accountcreation
+    [Template]            AccountCreation
     NameAccount       7846513213
 
 *** keywords ***
-Accountcreation
+AccountCreation
     [Arguments]               ${Account Name}   ${Phone}
     Home
     LaunchApp                 Sales
