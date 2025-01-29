@@ -2,7 +2,7 @@
 # before running this suite.
 
 *** Settings ***
-Resource                      ../resources/common.robot
+Resource                      ../Resources/common.robot
 Suite Setup                   Setup Browser
 Suite Teardown                End suite
 Library                       DataDriver        reader_class=TestDataApi        name=Book1.csv
