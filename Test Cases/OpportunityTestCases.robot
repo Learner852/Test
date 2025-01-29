@@ -26,7 +26,7 @@ AccountCreation
 
     TypeText                  *Account Name               ${Account Name}      timeout=0
     
-Another AccountCreation
+AnotherAccountCreation
     [Arguments]               ${Account Name}   ${Phone}
     Home
     LaunchApp                 Sales
