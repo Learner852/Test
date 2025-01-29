@@ -11,8 +11,8 @@ Test Template                 AccountCreation
 
 *** Test Cases ***
 Test Case which will pass its own value 
-    [Template]   AccountCreation
-    NameAccount   7846513213
+    [Template]               AccountCreation
+    NameAccount              7846513213
 
 *** Keywords ***
 AccountCreation
