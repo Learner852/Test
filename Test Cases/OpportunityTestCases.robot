@@ -12,6 +12,6 @@ Test Template      accountCreation
 *** Test Cases ***
 Test Case which will pass its own value 
     [Template]     accountCreation
-    NameAccount    7846513213
+    condalia    7846513213
 
 *** Keywords ***
