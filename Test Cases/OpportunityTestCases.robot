@@ -15,7 +15,7 @@ Test Case which will pass its own value
     [Template]            AccountCreation
     NameAccount       7846513213
 
-*** keywords ***
+*** Keywords ***
 AccountCreation
     [Arguments]               ${Account Name}   ${Phone}
     Home
