@@ -74,7 +74,7 @@ AccountsTestData
     ${account_type}           Set Variable       ${Type}
 
 accountCreation
-    [Arguments]    ${Account Name}             ${Phone}
+    [Arguments]    ${AccountName}             ${Phone}
     Home
     LaunchApp      Sales
 
