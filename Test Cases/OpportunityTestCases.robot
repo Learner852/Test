@@ -11,7 +11,8 @@ Test Template                 AccountCreation
 
 *** Test Cases ***
 Test Case which will pass its own value 
-    [Template]      AccountCreation     NameAccount              7846513213
+    [Template]               Another AccountCreation    
+    NameAccount              7846513213
 
 *** Keywords ***
 AccountCreation
@@ -25,7 +26,7 @@ AccountCreation
 
     TypeText                  *Account Name               ${Account Name}      timeout=0
     
-ANother AccountCreation
+Another AccountCreation
     [Arguments]               ${Account Name}   ${Phone}
     Home
     LaunchApp                 Sales
