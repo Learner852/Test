@@ -11,5 +11,6 @@ Library            DataDriver                  reader_class=TestDataApi    name=
 
 *** Test Cases ***
 Test Case which will pass its own value 
-    [Template]     accountCreation 
-    condalia        7846513213
+    [Documentation]    Here we will be using the template
+    [Template]         accountCreation 
+    condalia            7846513213    
