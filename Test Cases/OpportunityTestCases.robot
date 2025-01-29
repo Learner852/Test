@@ -15,13 +15,3 @@ Test Case which will pass its own value
     NameAccount    7846513213
 
 *** Keywords ***
-accountCreation
-    [Arguments]    ${Account Name}             ${Phone}
-    Home
-    LaunchApp      Sales
-
-    ClickText      Accounts
-    ClickUntil     Select a record type        New                         timeout=0
-    ClickText      Next                        anchor=Account page for creating volunteer organizations
-
-    TypeText       *Account Name               ${Account Name}             timeout=0
