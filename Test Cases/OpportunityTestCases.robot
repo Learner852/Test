@@ -16,6 +16,7 @@ Oppotunity creation and validation
     LaunchApp                   Sales
     ClickElement                xpath=//a[@title='Opportunities']
     ClickElement                xpath=//div[@title='New']
+    #Opportunity_Name is defined as a variable inside the test lab
     TypeText                    *Opportunity Name           ${Opportunity_Name}    anchor=Opportunity Information
     @{lead_source}              GetPickList                 Lead Source         selected=false
     PickList                    Lead Source                 Web
