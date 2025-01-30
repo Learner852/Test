@@ -20,7 +20,7 @@ Oppotunity creation and validation
     @{lead_source}              GetPickList                 Lead Source         selected=false
     #ComboBox                   Web                         timeout=
     Select From List By Label                        Lead Source                Web
-    Execute Javascript          document.querySelector("select[name='LeadSource']").value='Web'
+    #Execute Javascript          document.querySelector("select[name='LeadSource']").value='Web'
     TypeText                    Amount                      4513235
     TypeText                    *Close Date                 24/1/2025
     ComboBox                    *Stage                      Qualified           timeout=0
