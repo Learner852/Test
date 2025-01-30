@@ -41,7 +41,7 @@ Oppotunity creation with data from json file and validation
     ClickElement                xpath=//div[@title='New']
     ${random_number}            Random Number               digits=5         fix_len=False
     #Opportunity_Name is defined as a variable inside the test lab
-    TypeText                    *Opportunity Name           &{test_data}[Name]-${random_number}    anchor=Opportunity Information
+    TypeText                    *Opportunity Name           &{test_data}['Name']-${random_number}    anchor=Opportunity Information
     @{lead_source}              GetPickList                 Lead Source         selected=false
     PickList                    Lead Source                 Web
     TypeText                    Amount                      4513235    
