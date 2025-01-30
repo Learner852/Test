@@ -28,5 +28,5 @@ Oppotunity creation and validation
     ClickText                   Details
     VerifyField                 Opportunity Name            ${Opportunity_Name}-${random_number}       partial_match=false
     VerifyField                 Amount                      4513235
-    VerifyField                 Close Date                 24/1/2025
-    VerifyField                 Stage                      Qualified
+    VerifyField                 Close Date                  24/1/2025
+    VerifyField                 Stage                       Qualified
