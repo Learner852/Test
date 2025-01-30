@@ -11,3 +11,6 @@ Test Template      accountCreation
 
 *** Test Cases ***
 Oppotunity creation and validation
+    Appstate    Home
+    
+    
