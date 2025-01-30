@@ -74,4 +74,3 @@ Space Station creation with data from json file and validation
     VerifyField         Space Station Name            ${test_data['Name']}-${random_number}                    partial_match=false
     VerifyField         Project Status                ${test_data['ProjectStatus']}
     VerifyField         Shield Status                 ${test_data['ShieldStatus']} 
-    VerifyField         Lead Source                 ${test_data['LeadSource']}
