@@ -15,4 +15,5 @@ Oppotunity creation and validation
     LaunchApp                   Sales
     ClickText                   Opportunity
     ClickElement                xpath=//div[@title='New']
+    TypeText                    *Opportunity Name                FirstOpportunity     anchor=Opportunity Information
 
