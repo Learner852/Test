@@ -59,18 +59,16 @@ Space Station creation with data from json file and validation
     [Documentation]     This test case is for space station creation and validation
     [Tags]              testgen                     regression
     Appstate            Home
-    &{test_data}=       PickTestData                Create opportunity
-    LaunchApp           Sales
-    ClickElement        xpath=//a[@title='Opportunities']
+    &{test_data}=       PickTestData                Create Space Station
+    LaunchApp           Space Station Constructions
+    ClickElement        xpath=//a[@title='Space Stations']
     ClickElement        xpath=//div[@title='New']
     ${random_number}    Random Number               digits=5                    fix_len=False
     #Opportunity_Name is defined as a variable inside the test lab
-    TypeText            *Opportunity Name           ${test_data['Name']}-${random_number}                   anchor=Opportunity Information
-    @{lead_source}      GetPickList                 Lead Source                 selected=false
-    PickList            Lead Source                 ${test_data['LeadSource']}
-    TypeText            Amount                      ${test_data['Amount']}
-    TypeText            *Close Date                 ${test_data['StartDate']}
-    PickList            *Stage                      ${test_data['Stage']}       timeout=0
+    TypeText            *Space Station Name           ${test_data['Name']}-${random_number}                   anchor=Opportunity Information
+    @{lead_source}      GetPickList                 Project Status                 selected=false
+    PickList            Project Status              ${test_data['ProjectStatus']}
+    PickList            Shield Status               ${test_data['ShieldStatus']}       timeout=0
     Click Element       xpath=//button[@name='SaveEdit']                        timeout=3
     ClickText           Details
     VerifyField         Opportunity Name            ${test_data['Name']}-${random_number}                    partial_match=false
