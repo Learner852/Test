@@ -11,6 +11,7 @@ Test Template                   accountCreation
 
 *** Test Cases ***
 Oppotunity creation and validation
+    [Documentation]            This test case is for oppotunity creation and validation
     Appstate                    Home
     LaunchApp                   Sales
     ClickText                   Opportunity
