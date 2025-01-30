@@ -3,7 +3,7 @@ Documentation             Example resource file with custom keywords. NOTE: Some
 ...                       minor changes to work in different instances.
 Library                   QForce
 Library                   String
-Library                   SeleniumLibrary
+Library                   JSONLibrary
 Library                   FakerLibrary
 Library                    Collections
 
