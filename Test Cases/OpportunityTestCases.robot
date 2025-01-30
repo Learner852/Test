@@ -45,11 +45,11 @@ Oppotunity creation with data from json file and validation
     @{lead_source}      GetPickList                 Lead Source                 selected=false
     PickList            Lead Source                 ${test_data['LeadSource']}
     TypeText            Amount                      ${test_data['Amount']}
-    TypeText            *Close Date                 ${test_data['StartData']}
+    TypeText            *Close Date                 ${test_data['StartDate']}
     PickList            *Stage                      ${test_data['Stage']}       timeout=0
     Click Element       xpath=//button[@name='SaveEdit']                        timeout=3
     ClickText           Details
-    VerifyField         Opportunity Name            ${Opportunity_Name}-${random_number}                    partial_match=false
-    VerifyField         Close Date                  24/1/2025
-    VerifyField         Stage                       Qualified
-    VerifyField         Lead Source                 Web
+    VerifyField         Opportunity Name            ${test_data['Name']}-${random_number}                    partial_match=false
+    VerifyField         Close Date                  ${test_data['StartDate']}
+    VerifyField         Stage                       ${test_data['Stage']}
+    VerifyField         Lead Source                 ${test_data['LeadSource']}
