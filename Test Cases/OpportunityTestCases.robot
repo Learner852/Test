@@ -11,6 +11,9 @@ Test Template      accountCreation
 
 *** Test Cases ***
 Oppotunity creation and validation
-    Appstate    Home
-    
+    Appstate     Home
+    LaunchApp    Sales
+    ClickText    Opportunity
+    ClickElement xpath=//div[@title='New']
+
     
