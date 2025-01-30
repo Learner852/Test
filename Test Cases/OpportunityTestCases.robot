@@ -60,7 +60,7 @@ Space Station creation with data from json file and validation
     [Tags]              testgen                     regression
     Appstate            Home
     &{test_data}=       PickTestData                Create Space Station
-    LaunchApp           Space Station Constructions
+    LaunchApp           Space Station Construction
     ClickElement        xpath=//a[@title='Space Stations']
     ClickElement        xpath=//div[@title='New']
     ${random_number}    Random Number               digits=5                    fix_len=False
