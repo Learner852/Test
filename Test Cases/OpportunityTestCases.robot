@@ -17,4 +17,3 @@ Oppotunity creation and validation
     ClickText                   Opportunity
     ClickElement                xpath=//div[@title='New']
     TypeText                    *Opportunity Name                FirstOpportunity     anchor=Opportunity Information
-
