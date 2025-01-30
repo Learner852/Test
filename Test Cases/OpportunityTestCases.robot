@@ -16,7 +16,7 @@ Oppotunity creation and validation
     LaunchApp                   Sales
     ClickElement                xpath=//a[@title='Opportunities']
     ClickElement                xpath=//div[@title='New']
-    TypeText                    *Opportunity Name           ${OPPORTUNITY_NAME}    anchor=Opportunity Information
+    TypeText                    *Opportunity Name           ${Opportunity_Name}    anchor=Opportunity Information
     @{lead_source}              GetPickList                 Lead Source         selected=false
     PickList                    Lead Source                 Web
     TypeText                    Amount                      4513235
