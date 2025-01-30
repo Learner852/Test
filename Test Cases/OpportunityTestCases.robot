@@ -23,3 +23,4 @@ Oppotunity creation and validation
     TypeText                    Amount                      4513235
     TypeText                    *Close Date                 24/1/2025
     PickList                    *Stage                      Qualified           timeout=0
+    Click Element               xpath=//div/child::button[@name='SaveEdit']
