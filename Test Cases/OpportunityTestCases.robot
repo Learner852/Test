@@ -18,6 +18,6 @@ Oppotunity creation and validation
     ClickElement                xpath=//div[@title='New']
     TypeText                    *Opportunity Name                FirstOpportunity     anchor=Opportunity Information
     @{lead_source}              GetPickList                 Lead Source               selected=false
-    Select From List By Label                        
+    ComboBox                    Lead Source                 Web                       timeout=0                                   
     
     
