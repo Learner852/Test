@@ -25,3 +25,4 @@ Oppotunity creation and validation
     TypeText                    *Close Date                 24/1/2025
     PickList                    *Stage                      Qualified           timeout=0
     Click Element               xpath=//button[@name='SaveEdit']                timeout=3
+    ClickText                   Details
