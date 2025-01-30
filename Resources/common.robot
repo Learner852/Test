@@ -3,7 +3,7 @@ Documentation             Example resource file with custom keywords. NOTE: Some
 ...                       minor changes to work in different instances.
 Library                   QForce
 Library                   String
-Library                    SeleniumLibrary
+Library                   SeleniumLibrary
 
 *** Variables ***
 # IMPORTANT: Please read the readme.txt to understand needed variables and how to handle them!!
