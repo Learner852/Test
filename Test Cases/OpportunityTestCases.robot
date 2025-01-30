@@ -35,7 +35,7 @@ Oppotunity creation with data from json file and validation
     [Documentation]             This test case is for oppotunity creation and validation
     [Tags]                      testgen                     regression
     Appstate                    Home
-    &{test_data}=                PickTestData                Create opportunity
+    &{test_data}=               PickTestData                Create opportunity
     LaunchApp                   Sales
     ClickElement                xpath=//a[@title='Opportunities']
     ClickElement                xpath=//div[@title='New']
