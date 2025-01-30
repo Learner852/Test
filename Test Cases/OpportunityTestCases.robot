@@ -11,15 +11,15 @@ Suite Teardown                  End suite
 *** Test Cases ***
 Oppotunity creation and validation
     [Documentation]             This test case is for oppotunity creation and validation
-    [Tags]                      testgen    regression
+    [Tags]                      testgen                     regression
     Appstate                    Home
     LaunchApp                   Sales
     ClickElement                xpath=//a[@title='Opportunities']
     ClickElement                xpath=//div[@title='New']
-    TypeText                    *Opportunity Name                FirstOpportunity     anchor=Opportunity Information
-    @{lead_source}              GetPickList                 Lead Source               selected=false
-    ComboBox                    Lead Source                 Web                       timeout=0    
+    TypeText                    *Opportunity Name           FirstOpportunity    anchor=Opportunity Information
+    @{lead_source}              GetPickList                 Lead Source         selected=false
+    ComboBox                    Web                         timeout=
+    Execute Javascript          document.querySelector("select[name='LeadSource']
     TypeText                    Amount                      4513235
     TypeText                    *Close Date                 24/1/2025
-    ComboBox                    *Stage                      Qualified                 timeout=0
-    
+    ComboBox                    *Stage                      Qualified           timeout=0
