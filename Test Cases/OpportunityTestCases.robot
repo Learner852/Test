@@ -26,4 +26,4 @@ Oppotunity creation and validation
     PickList                    *Stage                      Qualified           timeout=0
     Click Element               xpath=//button[@name='SaveEdit']                timeout=3
     ClickText                   Details
-    VerifyField                 Opportunity Name            ${Opportunity_Name}-${random_number}   
+    VerifyField                 Opportunity Name            ${Opportunity_Name}-${random_number}       partial_match=false
