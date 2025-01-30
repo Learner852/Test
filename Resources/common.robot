@@ -4,7 +4,7 @@ Documentation             Example resource file with custom keywords. NOTE: Some
 Library                   QForce
 Library                   QWeb
 Library                   String
-
+Library                    SeleniumLibrary
 
 *** Variables ***
 # IMPORTANT: Please read the readme.txt to understand needed variables and how to handle them!!
