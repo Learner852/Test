@@ -21,4 +21,4 @@ Oppotunity creation and validation
     PickList                    Lead Source                 Web
     TypeText                    Amount                      4513235
     TypeText                    *Close Date                 24/1/2025
-    ComboBox                    *Stage                      Qualified           timeout=0
+    PickList                    *Stage                      Qualified           timeout=0
