@@ -18,6 +18,7 @@ Oppotunity creation and validation
     ClickElement                xpath=//div[@title='New']
     TypeText                    *Opportunity Name                FirstOpportunity     anchor=Opportunity Information
     @{lead_source}              GetPickList                 Lead Source               selected=false
-    ComboBox                    Lead Source                 Web                       timeout=0                                   
-    
+    ComboBox                    Lead Source                 Web                       timeout=0    
+    TypeText                    Amount                      4513235
+    TypeText                    *Close Date
     
