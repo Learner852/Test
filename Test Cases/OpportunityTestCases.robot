@@ -71,7 +71,7 @@ Space Station creation with data from json file and validation
     PickList            Shield Status               ${test_data['ShieldStatus']}       timeout=0
     Click Element       xpath=//button[@name='SaveEdit']                        timeout=3
     ClickText           Details
-    VerifyField         Opportunity Name            ${test_data['Name']}-${random_number}                    partial_match=false
-    VerifyField         Close Date                  ${test_data['StartDate']}
-    VerifyField         Stage                       ${test_data['Stage']}
+    VerifyField         Space Station Name            ${test_data['Name']}-${random_number}                    partial_match=false
+    VerifyField         Project Status                ${test_data['ProjectStatus']}
+    VerifyField         Shield Status                 ${test_data['ShieldStatus']} 
     VerifyField         Lead Source                 ${test_data['LeadSource']}
