@@ -64,13 +64,5 @@ Home
     VerifyTitle           Home | Salesforce
 
 
-AccountsTestData
-    [Documentation]           To get the data from the excel
-    [Arguments]               ${Account Name}    ${Phone}        ${Fax}        ${Website}        ${Type}
-    ${account_name}           Set Variable       ${Account Name} 
-    ${account_phone}          Set Variable       ${Phone}
-    ${account_website}        Set Variable       ${Website}
-    ${account_fax}            Set Variable       ${Fax}
-    ${account_type}           Set Variable       ${Type}
 
 
