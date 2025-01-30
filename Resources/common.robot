@@ -4,7 +4,6 @@ Documentation             Example resource file with custom keywords. NOTE: Some
 Library                   QForce
 Library                   QWeb
 Library                   String
-Library                   DataDriver        reader_class=TestDataApi        name=Book1.csv
 
 
 *** Variables ***
