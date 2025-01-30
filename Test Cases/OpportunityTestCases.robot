@@ -10,7 +10,4 @@ Test Template      accountCreation
 # also when using the Test template only the test case which can implement the test template can be written in this file
 
 *** Test Cases ***
-Test Case which will pass its own value 
-    [Documentation]    Here we will be using the template
-    [Template]         accountCreation 
-    condalia            7846513213    
+Contact creation 
