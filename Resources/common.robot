@@ -67,7 +67,7 @@ Home
 PickTestData
     [Documentation]        This keyword will pick data from the json file and convert it to the usable form
     ${json_data}           Load Json From File        ../Resources/TestData.json
-    ${dictionary_data}     Convert to Dictionary      
+    ${dictionary_data}     Convert to Dictionary      ${json_data}   
     
 
 
