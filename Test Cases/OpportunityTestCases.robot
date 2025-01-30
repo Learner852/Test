@@ -10,4 +10,4 @@ Test Template      accountCreation
 # also when using the Test template only the test case which can implement the test template can be written in this file
 
 *** Test Cases ***
-Contact creation 
+Oppotunity creation and validation
