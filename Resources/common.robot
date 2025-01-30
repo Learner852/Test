@@ -70,7 +70,7 @@ PickTestData
     [Arguments]                 ${test_name}
     ${json_data}=               Load Json From File         ../Test Data/TestData.json
     &{dictionary_data}=         Convert to Dictionary       ${json_data}
-    &{test_data}=               Get From Dictionary         &{dictionary_data}          ${test_name}
+    &{test_data}=               Get From Dictionary         dictionary=&{dictionary_data}          key=${test_name}
     Return From Keyword         &{test_data}
 
 
