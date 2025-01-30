@@ -20,5 +20,5 @@ Oppotunity creation and validation
     @{lead_source}              GetPickList                 Lead Source               selected=false
     ComboBox                    Lead Source                 Web                       timeout=0    
     TypeText                    Amount                      4513235
-    TypeText                    *Close Date
+    TypeText                    *Close Date                 24/1/2025
     
