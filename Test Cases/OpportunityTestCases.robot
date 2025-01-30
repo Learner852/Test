@@ -15,6 +15,6 @@ Oppotunity creation and validation
     [Tags]                      testgen    regression
     Appstate                    Home
     LaunchApp                   Sales
-    ClickText                   Opportunity
+    ClickElement                   xpath=//a[@title='Opportunities']
     ClickElement                xpath=//div[@title='New']
     TypeText                    *Opportunity Name                FirstOpportunity     anchor=Opportunity Information
