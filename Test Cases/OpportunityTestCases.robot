@@ -18,7 +18,7 @@ Oppotunity creation and validation
     ClickElement                xpath=//div[@title='New']
     ${random_number}            Random Number               digits=5         fix_len=False
     #Opportunity_Name is defined as a variable inside the test lab
-    TypeText                    *Opportunity Name           ${Opportunity_Name}    anchor=Opportunity Information
+    TypeText                    *Opportunity Name           ${Opportunity_Name}-${random_number}    anchor=Opportunity Information
     @{lead_source}              GetPickList                 Lead Source         selected=false
     PickList                    Lead Source                 Web
     TypeText                    Amount                      4513235
