@@ -1,0 +1,9 @@
+{
+    "Create opportunity":{
+        "Name": "NamedOpportunity",
+        "LeadSource":"Web",
+        "Stage":"Qualified",
+        "StartData":"26/2/25",
+        "Amount":"7894561"
+    }
+}
