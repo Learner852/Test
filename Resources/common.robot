@@ -5,6 +5,7 @@ Library                   QForce
 Library                   String
 Library                   SeleniumLibrary
 Library                   FakerLibrary
+Library                   JSONLibrary
 
 *** Variables ***
 # IMPORTANT: Please read the readme.txt to understand needed variables and how to handle them!!
@@ -62,6 +63,10 @@ Home
     Run Keyword If        ${login_status}             Login
     ClickText             Home
     VerifyTitle           Home | Salesforce
+    
+PickTestData
+    [Documentation]        This keyword will pick data from the json file and convert it to the usable form
+    Load Json From File    ../Resources/TestData.json
 
 
 
