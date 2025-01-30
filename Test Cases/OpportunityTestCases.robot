@@ -17,3 +17,5 @@ Oppotunity creation and validation
     ClickElement                xpath=//a[@title='Opportunities']
     ClickElement                xpath=//div[@title='New']
     TypeText                    *Opportunity Name                FirstOpportunity     anchor=Opportunity Information
+    @{lead_source}              GetPickList                 Lead Source               selected=false
+    
