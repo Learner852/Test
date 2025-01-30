@@ -69,8 +69,8 @@ PickTestData
     [Documentation]        This keyword will pick data from the json file and convert it to the usable form
     [Arguments]            ${test_name}
     ${json_data}           Load Json From File        ../Resources/TestData.json
-    ${dictionary_data}     Convert to Dictionary      ${json_data}   
-    
+    &{dictionary_data}     Convert to Dictionary      ${json_data}   
+    ${test_data}=          Get From Dictionary        &{dictionary_data}        ${test_name}
 
 
 
