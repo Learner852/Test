@@ -21,7 +21,8 @@ Oppotunity creation and validation
     TypeText                    *Opportunity Name           ${Opportunity_Name}-${random_number}    anchor=Opportunity Information
     @{lead_source}              GetPickList                 Lead Source         selected=false
     PickList                    Lead Source                 Web
-    TypeText                    Amount                      4513235
+    TypeText                    Amount                      4513235             
+    Sleep                       2s
     TypeText                    *Close Date                 24/1/2025
     PickList                    *Stage                      Qualified           timeout=0
     Click Element               xpath=//div/child::button[@name='SaveEdit']     timeout=2
