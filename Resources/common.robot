@@ -5,7 +5,7 @@ Library                   QForce
 Library                   String
 Library                   JSONLibrary
 Library                   FakerLibrary
-Library                    Collections
+Library                   Collections
 
 *** Variables ***
 # IMPORTANT: Please read the readme.txt to understand needed variables and how to handle them!!
