@@ -85,9 +85,6 @@ Resource creation with data from json file and validation
     LaunchApp         Space Station Construction
     ClickElement      xpath=//a[@title='Resources']
     ClickElement      xpath=//div[@title='New']
-    ClickText         Close this window
-    ClickText         Resources
-    ClickText         New
     UseModal          On
     TypeText          *Resource Name    fufmww
     TypeText          *Quantity         13
