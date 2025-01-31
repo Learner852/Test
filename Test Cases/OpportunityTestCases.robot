@@ -74,3 +74,12 @@ Space Station creation with data from json file and validation
     VerifyField         Space Station Name            ${test_data['Name']}-${random_number}                    partial_match=false
     VerifyField         Project Status                ${test_data['ProjectStatus']}
     VerifyField         Shield Status                 ${test_data['ShieldStatus']} 
+
+Resource creation with data from json file and validation
+    [Documentation]     This test case is for space Resource and validation
+    [Tags]              testgen                     regression
+    Appstate            Home
+    &{test_data}=       PickTestData                Create Space Station
+    LaunchApp           Space Station Construction
+    ClickElement        xpath=//a[@title='Resources']
+    ClickElement        xpath=//div[@title='New']
