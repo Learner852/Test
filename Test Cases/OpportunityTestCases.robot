@@ -2,6 +2,8 @@
 # before running this suite.
 
 *** Settings ***
+Library    QWeb
+Library    QForce
 Resource                ../Resources/common.robot
 Suite Setup             Setup Browser
 Suite Teardown          End suite
@@ -76,10 +78,20 @@ Space Station creation with data from json file and validation
     VerifyField         Shield Status                 ${test_data['ShieldStatus']} 
 
 Resource creation with data from json file and validation
-    [Documentation]     This test case is for space Resource and validation
-    [Tags]              testgen                     regression
-    Appstate            Home
-    &{test_data}=       PickTestData                Create Space Station
-    LaunchApp           Space Station Construction
-    ClickElement        xpath=//a[@title='Resources']
-    ClickElement        xpath=//div[@title='New']
+    [Documentation]   This test case is for space Resource and validation
+    [Tags]            testgen           regression
+    Appstate          Home
+    &{test_data} =    PickTestData      Create Space Station
+    LaunchApp         Space Station Construction
+    ClickElement      xpath=//a[@title='Resources']
+    ClickElement      xpath=//div[@title='New']
+    ClickText         Close this window
+    ClickText         Resources
+    ClickText         New
+    UseModal          On
+    TypeText          *Resource Name    fufmww
+    TypeText          *Quantity         13
+    TypeText          *Utilization      79
+    ComboBox          Search Space Stations...      Space Station 3967
+    ClickText         Save              partial_match=False
+    UseModal          Off
