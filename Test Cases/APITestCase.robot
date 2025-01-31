@@ -2,6 +2,7 @@
 Library        QForce
 Library        QWeb
 Library        RequestsLibrary
+Library        JSONLibrary
 
 *** Variables ***
 ${name}
