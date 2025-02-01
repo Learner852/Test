@@ -3,6 +3,7 @@ Library                         QForce
 Library                         QWeb
 Library                         RequestsLibrary
 Library                         JSONLibrary
+Library                         JsonValidator
 
 *** Variables ***
 ${name}
@@ -18,5 +19,5 @@ Get User Details
     
     ${response}=                Get On Session              jsonplaceholder        /students/1
     Status Should Be            ${response}                 200
-    ${response_body}=           To Json                     ${response.content}
+    ${response_body}=           Convert To Json                   ${response.content}
     Should Be Equal As Strings                              ${response_body.name}              Myrtle Gibson
