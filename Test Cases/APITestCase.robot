@@ -19,4 +19,4 @@ Get User Details
     ${response}=                Get On Session              jsonplaceholder        /students/1
     Status Should Be            ${response}                 200
     ${response_body}=           To Json                     ${response.content}
-    Should Be Equal As Strings                              ${response_body.name}              Leanne Graham
+    Should Be Equal As Strings                              ${response_body.name}              Myrtle Gibson
