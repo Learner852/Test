@@ -12,8 +12,15 @@ ${id}
 ${BASE_URL}                     http://localhost:3000/students
 
 
+*** Test Cases ***
+
+Running the API and validating the response
+    [Documentation]             validating API response
+    [Tags]                      testgen     API
+    
+
 *** Keywords ***
-Get User Details
+GetStudentDetails
     [Documentation]             This test case retrieves user details from the API and verifies the response.
     Create Session              jsonplaceholder             ${BASE_URL}
 
