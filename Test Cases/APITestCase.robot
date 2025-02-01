@@ -16,8 +16,8 @@ ${BASE_URL}                     http://localhost:3000/students
 Get User Details
     [Documentation]             This test case retrieves user details from the API and verifies the response.
     Create Session              jsonplaceholder             ${BASE_URL}
-    
+
     ${response}=                Get On Session              jsonplaceholder        /students/1
     Status Should Be            ${response}                 200
-    ${response_body}=           Convert To Json                   ${response.content}
-    Should Be Equal As Strings                              ${response_body.name}              Myrtle Gibson
+    ${response_body}=           Convert To Json             ${response.content}
+    Should Be Equal As Strings                              ${response_body.name}                 Myrtle Gibson
