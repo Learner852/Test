@@ -9,7 +9,7 @@ Library                         JsonValidator
 ${name}
 ${company}
 ${id}
-${BASE_URL}                     http://localhost:3000
+${BASE_URL}                     https://reqres.in/
 
 
 *** Test Cases ***
