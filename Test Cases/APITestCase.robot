@@ -17,7 +17,7 @@ ${BASE_URL}                     http://localhost:3000/students
 Running the API and validating the response
     [Documentation]             validating API response
     [Tags]                      testgen     API
-    
+    GetStudentDetails
 
 *** Keywords ***
 GetStudentDetails
