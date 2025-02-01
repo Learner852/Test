@@ -8,7 +8,7 @@ Library        JSONLibrary
 ${name}
 ${company}
 ${id}
-
+${BASE_URL}    
 
 *** Keywords ***
 Get User Details
