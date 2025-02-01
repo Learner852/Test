@@ -8,8 +8,7 @@ Library        JSONLibrary
 ${name}
 ${company}
 ${id}
-${BASE_URL}    
-
+${BASE_URL}    http://localhost:3000/students
 *** Keywords ***
 Get User Details
     [Documentation]    This test case retrieves user details from the API and verifies the response.
