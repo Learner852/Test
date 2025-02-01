@@ -9,7 +9,7 @@ Library                         JsonValidator
 ${name}
 ${company}
 ${id}
-${BASE_URL}                     http://localhost:3000/students
+${BASE_URL}                     http://localhost:3000
 
 
 *** Test Cases ***
