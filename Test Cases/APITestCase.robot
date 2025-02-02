@@ -24,7 +24,7 @@ GetStudentDetails
     [Documentation]             This test case retrieves user details from the API and verifies the response.
     Create Session              jsonplaceholder             ${BASE_URL}
 
-    &{response}=                Get On Session              jsonplaceholder        api/users/2
+    ${response}=                Get On Session              jsonplaceholder        api/users/2
     Status Should Be            200                         ${response}                 
     ${response_body}=           Evaluate                    json.loads(${response.content})               json
     #${response_body}            Set Variable                ${response.content}
