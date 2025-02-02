@@ -54,6 +54,8 @@ GetLocalStudentsApiTest
     Status Should Be            200                         ${response}
     ${response_body}=           Set Variable                ${response.json()}
     Should Be Equal As Strings                              ${response_body['name']}                      Myrtle Gibson
+
+
 PostLocalStudentsApiTest
     [Documentation]             This will test the post call onto the local students api
     Create Session              jsonplaceholder             ${students_url}
