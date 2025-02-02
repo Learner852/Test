@@ -10,6 +10,7 @@ ${name}
 ${company}
 ${id}
 ${BASE_URL}                     https://reqres.in/
+${students_url}                 http://localhost:3000/
 
 
 *** Test Cases ***
@@ -41,3 +42,7 @@ PostUserDetails
     Status Should Be            201                         ${response}
     ${response_body}=           Set Variable                ${response.json()}
     Should Be Equal As Strings                              ${response_body['first_name']}        perter
+
+PostLocalStudentsApiTest
+    [Documentation]             This will test the post call onto the local students api
+    Create Session              students
