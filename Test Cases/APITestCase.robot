@@ -26,5 +26,5 @@ GetStudentDetails
 
     ${response}=                Get On Session              jsonplaceholder        api/users/2
     Status Should Be            200                            ${response}                 
-    ${response_body}=           Convert To Json             ${response.content}
+    ${response_body}=           Convert To Json             ${response}
     Should Be Equal As Strings                              ${response_body.name}                 Myrtle Gibson
