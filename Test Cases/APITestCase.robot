@@ -18,6 +18,7 @@ Running the API and validating the response
     [Documentation]             validating API response
     [Tags]                      testgen     API
     GetStudentDetails
+    PostStudentDetails
 
 *** Keywords ***
 GetStudentDetails
