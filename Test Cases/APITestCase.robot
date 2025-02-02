@@ -16,7 +16,7 @@ ${BASE_URL}                     https://reqres.in/
 
 Running the API and validating the response
     [Documentation]             validating API response
-    [Tags]                      testgen     API
+    [Tags]                      testgen                     API
     GetStudentDetails
     PostStudentDetails
 
@@ -25,19 +25,19 @@ GetStudentDetails
     [Documentation]             This test case retrieves user details from the API and verifies the response.
     Create Session              jsonplaceholder             ${BASE_URL}
 
-    ${response}=                Get On Session              jsonplaceholder        api/users/2
+    ${response}=                Get On Session              jsonplaceholder       api/users/2
     Log To Console              $response
-    Status Should Be            200                         ${response}                 
-    ${response_body}=           Set Variable                ${response.json()}     
-    #${response_body}            Set Variable                ${response.content}
-    Should Be Equal As Strings                              ${response_body['data']['first_name']}                 Janet
-    
+    Status Should Be            200                         ${response}
+    ${response_body}=           Set Variable                ${response.json()}
+    #${response_body}           Set Variable                ${response.content}
+    Should Be Equal As Strings                              ${response_body['data']['first_name']}        Janet
+
 PostStudentDetails
-    [Documentation]              This test case makes a post call to the BASE_URL
-    [Tags]                       APItesting
+    [Documentation]             This test case makes a post call to the BASE_URL
+    [Tags]                      APItesting
     Create Session              jsonplaceholder             ${BASE_URL}
-    ${data}=                    Create Dictionary           id=7     email=pester@gma.com    first_name=perter    last_name=kumar
-    ${response}=                Post On Session             jsonplaceholder            api/users/?page=1          json=${data}             
-    Status Should Be            201                         ${response}                 
-    ${response_body}=           Set Variable                ${response.json()}     
-    Should Be Equal As Strings                              ${response_body['data']['first_name']}                 perter
+    ${data}=                    Create Dictionary           id=7                  email=pester@gma.com    first_name=perter    last_name=kumar
+    ${response}=                Post On Session             jsonplaceholder       api/users/?page=1       json=${data}
+    Status Should Be            201                         ${response}
+    ${response_body}=           Set Variable                ${response.json()}
+    Should Be Equal As Strings                              ${response_body['data']['first_name']}        perter
