@@ -32,7 +32,6 @@ GetUserDetails
     Log To Console              $response
     Status Should Be            200                         ${response}
     ${response_body}=           Set Variable                ${response.json()}
-    #${response_body}           Set Variable                ${response.content}
     Should Be Equal As Strings                              ${response_body['data']['first_name']}        Janet
 
 PostUserDetails
