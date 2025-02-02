@@ -25,6 +25,6 @@ GetStudentDetails
     Create Session              jsonplaceholder             ${BASE_URL}
 
     ${response}=                Get On Session              jsonplaceholder        api/users/2
-    Status Should Be            ${response}                 200
+    Status Should Be            200                            ${response}                 
     ${response_body}=           Convert To Json             ${response.content}
     Should Be Equal As Strings                              ${response_body.name}                 Myrtle Gibson
