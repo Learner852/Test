@@ -32,3 +32,5 @@ GetStudentDetails
     Should Be Equal As Strings                              ${response_body['data']['first_name']}                 Janet
     
 PostStudentDetails
+    [Documentation]              This test case makes a post call to the BASE_URL
+    [Tags]                       testgen    APItesting
