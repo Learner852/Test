@@ -46,3 +46,4 @@ PostUserDetails
 PostLocalStudentsApiTest
     [Documentation]             This will test the post call onto the local students api
     Create Session              students                    ${students_url}
+    ${data}=                    Create Dictionary           id=1     name=Pester Gola school=Bins username":"Dustin.Johnson64","email":"Bridgette45@hotmail.com"
