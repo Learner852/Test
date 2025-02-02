@@ -33,4 +33,4 @@ GetStudentDetails
     
 PostStudentDetails
     [Documentation]              This test case makes a post call to the BASE_URL
-    [Tags]                       testgen    APItesting
+    [Tags]                       APItesting
