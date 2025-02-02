@@ -45,4 +45,4 @@ PostUserDetails
 
 PostLocalStudentsApiTest
     [Documentation]             This will test the post call onto the local students api
-    Create Session              students
+    Create Session              students                    ${students_url}
