@@ -28,4 +28,4 @@ GetStudentDetails
     Status Should Be            200                         ${response}                 
    # ${response_body}=           Evaluate                    json.loads(${response.content})               json
     ${response_body}            Set Variable                ${response.content}
-    Should Be Equal As Strings                              ${response_body.name}                 Myrtle Gibson
+    Should Be Equal As Strings                              ${response_body.first_name}                 Myrtle Gibson
