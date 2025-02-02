@@ -20,6 +20,7 @@ Running the API and validating the response
     [Tags]                      testgen                     API
     GetUserDetails
     PostUserDetails
+    PostLocalStudentsApiTest
 
 *** Keywords ***
 GetUserDetails
