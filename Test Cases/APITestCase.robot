@@ -40,4 +40,4 @@ PostStudentDetails
     ${response}=                Post On Session             jsonplaceholder       api/users/?page\=1       json=${data}
     Status Should Be            201                         ${response}
     ${response_body}=           Set Variable                ${response.json()}
-    Should Be Equal As Strings                              ${response_body['data']['first_name']}        perter
+    Should Be Equal As Strings                              ${response_body['first_name']}        perter
