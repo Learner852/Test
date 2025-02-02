@@ -44,6 +44,15 @@ PostUserDetails
     ${response_body}=           Set Variable                ${response.json()}
     Should Be Equal As Strings                              ${response_body['first_name']}                perter
 
+
+GetLocalStudentsApiTest
+    [Documentation]             This will test the post call onto the local students api
+    Create Session              jsonplaceholder             ${students_url}
+    #${data}=                    Create Dictionary           id=11                  name=Pester Gola        school=Bins          username=pester1234 email=pester@hotmail.com
+    ${response}                 Get On Session             jsonplaceholder       /students              
+    Status Should Be            201                         ${response}
+    ${response_body}=           Set Variable                ${response.json()}
+    Should Be Equal As Strings                              ${response_body['name']}                      Pester Gola
 PostLocalStudentsApiTest
     [Documentation]             This will test the post call onto the local students api
     Create Session              jsonplaceholder             ${students_url}
