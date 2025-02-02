@@ -17,11 +17,11 @@ ${BASE_URL}                     https://reqres.in/
 Running the API and validating the response
     [Documentation]             validating API response
     [Tags]                      testgen                     API
-    GetStudentDetails
-    PostStudentDetails
+    GetUserDetails
+    PostUserDetails
 
 *** Keywords ***
-GetStudentDetails
+GetUserDetails
     [Documentation]             This test case retrieves user details from the API and verifies the response.
     Create Session              jsonplaceholder             ${BASE_URL}
 
@@ -32,7 +32,7 @@ GetStudentDetails
     #${response_body}           Set Variable                ${response.content}
     Should Be Equal As Strings                              ${response_body['data']['first_name']}        Janet
 
-PostStudentDetails
+PostUserDetails
     [Documentation]             This test case makes a post call to the BASE_URL
     [Tags]                      APItesting
     Create Session              jsonplaceholder             ${BASE_URL}
