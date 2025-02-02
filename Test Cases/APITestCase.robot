@@ -47,4 +47,4 @@ PostLocalStudentsApiTest
     [Documentation]             This will test the post call onto the local students api
     Create Session              jsonplaceholder                    ${students_url}
     ${data}=                    Create Dictionary           id=1     name=Pester Gola      school=Bins   username=pester1234 email=pester@hotmail.com
-    ${response}                 Post On Session             jsonplaceholder        /students                       
+    ${response}                 Post On Session             jsonplaceholder        /students           json=${data}            
