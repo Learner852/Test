@@ -26,6 +26,6 @@ GetStudentDetails
 
     ${response}=                Get On Session              jsonplaceholder        api/users/2
     Status Should Be            200                         ${response}                 
-   # ${response_body}=           Evaluate                    json.loads(${response.content})               json
-    ${response_body}            Set Variable                ${response.content}
+    ${response_body}=           Evaluate                    json.loads(${response.content})               json
+    #${response_body}            Set Variable                ${response.content}
     Should Be Equal As Strings                              ${response_body.first_name}                 Myrtle Gibson
