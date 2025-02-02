@@ -34,3 +34,9 @@ GetStudentDetails
 PostStudentDetails
     [Documentation]              This test case makes a post call to the BASE_URL
     [Tags]                       APItesting
+    Create Session              jsonplaceholder             ${BASE_URL}
+    ${data}=                    Create Dictionary           id=7     email=pester@gma.com    first_name=perter    last_name=kumar
+    ${response}=                Post On Session             jsonplaceholder            api/users/?page=1          json=${data}             
+    Status Should Be            200                         ${response}                 
+    ${response_body}=           Set Variable                ${response.json()}     
+    Should Be Equal As Strings                              ${response_body['data']['first_name']}                 Janet
