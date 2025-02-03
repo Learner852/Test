@@ -22,8 +22,9 @@ Running the API and validating the response
     [Tags]                      testgen                     API
     GetUserDetails
     PostUserDetails
+    GetRequestToAPIwithToken
     GetLocalStudentsApiTest
-    PostLocalStudentsApiTest
+    
 
 *** Keywords ***
 GetUserDetails
