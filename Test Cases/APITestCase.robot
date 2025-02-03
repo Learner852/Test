@@ -58,3 +58,7 @@ GetLocalStudentsApiTest
 GetRequestToAPIwithToken
     [Documentation]             gorest api with AUTH_TOKEN
     Create Session              gorest                       ${gorest_url}           headers={"Authorization":"Bearer ${TOKEN}"}
+    ${response}                 Get On Session               gorest                  /public/v2/users
+    Status Should Be            200                          ${response}
+    ${response_body}            Set Variable                 ${response.json()}
+    Log                        ${response_body}
