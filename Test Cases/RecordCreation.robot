@@ -1,6 +1,7 @@
 *** Settings ***
-Resource        ../Resources/common.robot
-
+Resource         ../Resources/common.robot
+Test Setup       Setup Browser
+Test Teardown    End suite
 
 
 *** Test Cases ***
