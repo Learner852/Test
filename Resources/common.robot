@@ -10,12 +10,11 @@ Library                         Collections
 *** Variables ***
 # IMPORTANT: Please read the readme.txt to understand needed variables and how to handle them!!
 ${BROWSER}                      chrome
-${username}                     saibhargav441@accenture.com
-${password}                     Palmeras789%
 ${login_url}                    https://learndeveloperskills-dev-ed.develop.my.salesforce.com/                      # Salesforce instance. NOTE: Should be overwritten in CRT variables
 ${home_url}                     ${login_url}/lightning/page/home
 ${excel_file}
 ${test_name}
+
 
 *** Keywords ***
 Setup Browser
@@ -34,13 +33,11 @@ End suite
 
 
 Login
-    [Documentation]             Login to Salesforce instance. Takes instance_url, username and password as
-    ...                         arguments. Uses values given in Copado Robotic Testing's variables section by default.
-    [Arguments]                 ${sf_instance_url}=${login_url}                         ${sf_username}=${username}                  ${sf_password}=${password}
-    GoTo                        ${sf_instance_url}
-    TypeText                    Username                    ${sf_username}              delay=1
-    TypeSecret                  Password                    ${sf_password}
-    ClickText                   Log In
+    [Documentation]              Login to Salesforce instance. Takes instance_url, username and password as
+    ...                          arguments. Uses values given in Copado Robotic Testing's variables section by default.
+     TypeText                    Username                    ${username}              anchor=Username    delay=1
+    TypeSecret                   Password                    ${password}              anchor=Password
+    ClickText                    Log In
     # We'll check if variable ${secret} is given. If yes, fill the MFA dialog.
     # If not, MFA is not expected.
     # ${secret} is ${None} unless specifically given.
@@ -74,5 +71,7 @@ PickTestData
     Return From Keyword         &{test_data}
 
 
-
+NavigateAndAuthenticateSalesforce         
+    [Documentation]     authenticate the salesforce
+    Authenticate        ${client_id}     ${client_secret}    ${username}    ${password}
 
