@@ -76,5 +76,5 @@ PickTestData
 
 NavigateAndAuthenticateSalesforce         
     [Documentation]     authenticate the salesforce
-            
+    GoTo                https://learndeveloperskills-dev-ed.develop.lightning.force.com/lightning       
 
