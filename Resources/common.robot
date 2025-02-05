@@ -77,5 +77,6 @@ PickTestData
 NavigateAndAuthenticateSalesforce         
     [Documentation]     authenticate the salesforce
     Login
+    LaunchApp           sales
 
 
