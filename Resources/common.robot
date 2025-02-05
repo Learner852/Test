@@ -76,9 +76,6 @@ PickTestData
 
 NavigateAndAuthenticateSalesforce         
     [Documentation]     authenticate the salesforce
-    GoTo                        ${login_url} 
-    TypeText                    Username                    ${username}              delay=1
-    TypeSecret                  Password                    ${password}
-    ClickText                   Log In
-    
+    Login
+
 
