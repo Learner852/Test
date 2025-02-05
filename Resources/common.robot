@@ -15,6 +15,7 @@ ${home_url}                     ${login_url}/lightning/page/home
 ${excel_file}
 ${test_name}
 
+
 *** Keywords ***
 Setup Browser
     # Setting search order is not really needed here, but given as an example
