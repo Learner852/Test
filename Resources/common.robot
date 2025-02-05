@@ -80,4 +80,5 @@ NavigateAndAuthenticateSalesforce
     TypeText                    Username                    ${username}              delay=1
     TypeSecret                  Password                    ${password}
     ClickText                   Log In
+    
 
