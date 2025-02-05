@@ -16,6 +16,7 @@ ${login_url}                    https://learndeveloperskills-dev-ed.develop.my.s
 ${home_url}                     ${login_url}/lightning/page/home
 ${excel_file}
 ${test_name}
+${client_id}                    3MVG9n_HvETGhr3BKlTABFV6wb9Y59LR0USOXBUkOaj40iWOTnpzPGw99AOVdydAthGXhoCmbMGWhKWT_c3r6
 
 *** Keywords ***
 Setup Browser
@@ -78,5 +79,5 @@ NavigateAndAuthenticateSalesforce
     [Documentation]     authenticate the salesforce
     Login
     LaunchApp           sales
-
+    Authenticate        
 
