@@ -17,6 +17,7 @@ ${home_url}                     ${login_url}/lightning/page/home
 ${excel_file}
 ${test_name}
 ${client_id}                    3MVG9n_HvETGhr3BKlTABFV6wb9Y59LR0USOXBUkOaj40iWOTnpzPGw99AOVdydAthGXhoCmbMGWhKWT_c3r6
+${client_secret}                5441F93DE1F47F1AB676D9BB098F63233B9D595179410D29D36BFAF57E0825EC
 
 *** Keywords ***
 Setup Browser
