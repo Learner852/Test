@@ -35,7 +35,7 @@ End suite
 Login
     [Documentation]             Login to Salesforce instance. Takes instance_url, username and password as
     ...                         arguments. Uses values given in Copado Robotic Testing's variables section by default.
-    [Arguments]                 ${sf_instance_url}=${login_url}                         ${sf_username}=${username}                  ${sf_password}=${password}
+    [Arguments]                 ${sf_username}=${username}                  ${sf_password}=${password}
     TypeText                    Username                    ${sf_username}              delay=1
     TypeSecret                  Password                    ${sf_password}
     ClickText                   Log In
