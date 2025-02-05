@@ -74,7 +74,7 @@ PickTestData
     Return From Keyword         &{test_data}
 
 
-AuthenticateSalesforce         
+NavigateAndAuthenticateSalesforce         
     [Documentation]     authenticate the salesforce
-    Authenticate        
+            
 
