@@ -78,5 +78,5 @@ NavigateAndAuthenticateSalesforce
     [Documentation]     authenticate the salesforce
     Login
     LaunchApp           sales
-    Authenticate        ${client_id}     ${client_secret}
+    Authenticate        ${client_id}     ${client_secret}    ${username}    ${password}
 
