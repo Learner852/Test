@@ -74,7 +74,5 @@ PickTestData
 
 NavigateAndAuthenticateSalesforce         
     [Documentation]     authenticate the salesforce
-    Home
-    LaunchApp           sales
     Authenticate        ${client_id}     ${client_secret}    ${username}    ${password}
 
