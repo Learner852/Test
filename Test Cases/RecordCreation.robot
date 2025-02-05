@@ -9,3 +9,4 @@ Create Account Object Records
     [Documentation]                         will create account Records
     [Tags]                                  testgen                     authenticate
     NavigateAndAuthenticateSalesforce
+    CreateRecord
