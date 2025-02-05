@@ -9,4 +9,4 @@ Create Account Object Records
     [Documentation]                         will create account Records
     [Tags]                                  testgen                     authenticate
     NavigateAndAuthenticateSalesforce
-    CreateRecord                            Account
+    ${account_created}                      CreateRecord                            Account        Name=CRT_Account1
