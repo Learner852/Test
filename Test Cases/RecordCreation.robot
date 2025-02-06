@@ -10,4 +10,5 @@ Create Account Object Records
     [Tags]                                  testgen                     authenticate
     Appstate                                Home
     NavigateAndAuthenticateSalesforce
-    ${account_created}                      CreateRecord                            Account        Name=CRT_Account1
+    ${account_created}                      CreateRecord                            Account        Name=CRT_Account2
+    GoTo                                    https://learndeveloperskills-dev-ed.develop.lightning.force.com/lightning/r/Account/${account_created}/view
