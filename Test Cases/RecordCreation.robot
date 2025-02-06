@@ -13,3 +13,4 @@ Create Account Object Records
     ${account_created}                      CreateRecord                            Account        Name=CRT_Account2
     GoTo                                    https://learndeveloperskills-dev-ed.develop.lightning.force.com/lightning/r/Account/${account_created}/view
     ClickElement                            xpath=//a[@id='detailTab__item']
+    VerifyField                             Account Name                        CRT_Account2
