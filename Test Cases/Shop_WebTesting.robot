@@ -2,7 +2,7 @@
 Library    QWeb
 
 *** Variables ***
-${index}
+${index}=    1
 
 *** Test Cases ***
 Add to cart and buy the products
