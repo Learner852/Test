@@ -14,6 +14,7 @@ Add to cart and buy the products
     ${product_count}      Get Count                   products    product-list
     Log                   ${product_count}
     Execute JavaScript    window.open("about:blank", "_blank");
+    GoTo                  ${product_count}
     #FOR                  ${index}                    IN RANGE    ${index}
     # ClickItem           xpath=//ul[@*='product-list']/li[${index}]
     #END
