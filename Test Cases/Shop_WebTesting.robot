@@ -16,6 +16,7 @@ Add to cart and buy the products
     SwitchWindow          1
     FOR                  ${index}                    IN RANGE    1  ${product_count}
         ClickElement           (//li/div[@class\='product-details'])[${index}]/h4/a
+        Sleep                  2s
         ClickText              Add to cart
         ClickText              Continue shopping     anchor=Cart summary
         clicktext              Products              anchor=General
