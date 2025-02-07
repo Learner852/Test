@@ -7,3 +7,4 @@ Add to cart and buy the products
     [Tags]             testgen
     OpenBrowser        ${url}    chrome
     VerifyText         Find your spirit animal
+    ClickItem          xpath=//ul[@*='product-list']/li[]
