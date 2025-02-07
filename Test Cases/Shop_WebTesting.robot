@@ -13,6 +13,7 @@ Add to cart and buy the products
     VerifyText            Find your spirit animal
     ${product_count}=      GetElementCount     //li/div[@class\='product-details']
     Execute JavaScript    window.open("about:blank", "_blank");
+    SwitchWindow          1
     FOR                  ${index}                    IN RANGE    1  ${product_count}
         ClickElement           (//li/div[@class='product-details'])[${index}]/h4
         ClickText              Add to cart
