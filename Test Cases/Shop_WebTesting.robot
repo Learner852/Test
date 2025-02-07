@@ -3,6 +3,7 @@ Library                   QWeb
 
 *** Variables ***
 ${index}=                 1
+${NEW_TAB_URL}            www.google.com
 
 *** Test Cases ***
 Add to cart and buy the products
