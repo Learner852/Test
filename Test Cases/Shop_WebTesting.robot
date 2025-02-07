@@ -13,7 +13,7 @@ Add to cart and buy the products
     VerifyText            Find your spirit animal
     ${product_count}      Get Count                   products    product-list
     Log                   ${product_count}
-    Execute JavaScript    window.open("${NEW_TAB_URL}", "_blank");
+    Execute JavaScript    window.open("about:blank", "_blank");
     #FOR                  ${index}                    IN RANGE    ${index}
     # ClickItem           xpath=//ul[@*='product-list']/li[${index}]
     #END
