@@ -11,7 +11,7 @@ Add to cart and buy the products
     [Tags]                testgen
     OpenBrowser           ${url}                      chrome
     VerifyText            Find your spirit animal
-    ${product_count}=      GetElementCount     xpath=//li/div[@class\='product-details']
+    ${product_count}=      GetElementCount     //li/div[@class\='product-details']
     Log                   ${product_count}
     Execute JavaScript    window.open("about:blank", "_blank");
     #FOR                  ${index}                    IN RANGE    ${index}
