@@ -10,7 +10,7 @@ Add to cart and buy the products
     [Tags]             testgen
     OpenBrowser        ${url}    chrome
     VerifyText         Find your spirit animal
-    Get Count          products    product-list
+    ${product_count}   Get Count          products    product-list
     #FOR   ${index}     IN RANGE   ${index}  
     # ClickItem          xpath=//ul[@*='product-list']/li[${index}]   
     #END
