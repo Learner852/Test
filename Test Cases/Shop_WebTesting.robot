@@ -15,4 +15,7 @@ Add to cart and buy the products
     Execute JavaScript    window.open("about:blank", "_blank");
     FOR                  ${index}                    IN RANGE    1  ${product_count}
         ClickElement           (//li/div[@class='product-details'])[${index}]/h4
+        ClickText              Add to cart
+        ClickText              Continue shopping     anchor=Cart summary
+        clicktext              Products              anchor=General
     END
