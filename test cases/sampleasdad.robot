@@ -15,4 +15,4 @@ sampleasdad
     GoTo                 https://qentinelqi.github.io/shop/
     VerifyText           your
     VerifyText           Find your spirit animal
-    ExecuteJavascript    document.querySelectorAll('ul.product-list li:nth-child(1) .style-picker div')[2].click;
+    ExecuteJavascript    document.querySelectorAll('ul.product-list li:nth-child(1) .style-picker div')[2].click();
