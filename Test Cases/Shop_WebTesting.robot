@@ -14,6 +14,7 @@ Add to cart and buy the products
     ${product_count}=      GetElementCount     //li/div[@class\='product-details']
     Execute JavaScript    window.open("about:blank", "_blank");
     SwitchWindow          1
+    ${product_list}=      Create List           
     FOR                  ${index}                    IN RANGE    1  ${product_count}+1
         ClickElement           (//li/div[@class\='product-details'])[${index}]/h4/a
         Sleep                  2s
