@@ -31,4 +31,5 @@ Add to cart and buy the products
     Set Variable          ${index}                    1            
     FOR    ${index}    IN RANGE   1    ${product_count}+1
         ${temp}=        Get From List                  ${product_list}    ${index+1}
+        VerifyText      ${temp}
     END        
