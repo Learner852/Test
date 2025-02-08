@@ -11,16 +11,16 @@ Add to cart and buy the products
     [Tags]                testgen
     OpenBrowser           ${url}                      chrome
     VerifyText            Find your spirit animal
-    ${product_count}=      GetElementCount     //li/div[@class\='product-details']
+    ${product_count}=     GetElementCount             //li/div[@class\='product-details']
     Execute JavaScript    window.open("about:blank", "_blank");
     SwitchWindow          1
-    ${product_list}=      Create List           
-    FOR                  ${index}                    IN RANGE    1  ${product_count}+1
-        ClickElement           (//li/div[@class\='product-details'])[${index}]/h4/a
-        Sleep                  2s
-        GetText                xpath=//div[@class='text-container']/child::h2
-        ClickText              Add to cart
-        ClickText              Continue shopping     anchor=Cart summary
-        Sleep                  2s
-        clicktext              Products              anchor=General
+    ${product_list}=      Create List
+    FOR                   ${index}                    IN RANGE                    1    ${product_count}+1
+        ClickElement      (//li/div[@class\='product-details'])[${index}]/h4/a
+        Sleep             2s
+        ${product_name}   GetText           xpath=//div[@class='text-container']/child::h2
+        ClickText         Add to cart
+        ClickText         Continue shopping           anchor=Cart summary
+        Sleep             2s
+        clicktext         Products                    anchor=General
     END
