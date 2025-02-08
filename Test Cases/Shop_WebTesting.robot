@@ -28,6 +28,7 @@ Add to cart and buy the products
     END
     Log List              ${product_list}
     ClickElement          xpath=//*[.\='shopping_cart']
-    FOR    ${index}    IN    1    ${product_count}+1
+    ${index}=             1
+    FOR    ${index}    IN    1    ${product_count}
         ${temp}        Get From List                  ${product_list}    ${index}
     END        
