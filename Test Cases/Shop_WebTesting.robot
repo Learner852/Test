@@ -19,6 +19,7 @@ Add to cart and buy the products
         ClickElement      (//li/div[@class\='product-details'])[${index}]/h4/a
         Sleep             2s
         ${product_name}   GetText           xpath=//div[@class='text-container']/child::h2
+        Append To List    ${product_list}             ${product_name}
         ClickText         Add to cart
         ClickText         Continue shopping           anchor=Cart summary
         Sleep             2s
