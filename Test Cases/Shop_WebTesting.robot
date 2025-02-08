@@ -28,4 +28,4 @@ Add to cart and buy the products
     END
     Log List              ${product_list}
     ClickElement          xpath=//*[.\='shopping_cart']
-    Get From List         
+    #Get From List         
