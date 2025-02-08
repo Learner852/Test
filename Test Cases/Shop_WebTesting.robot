@@ -19,5 +19,6 @@ Add to cart and buy the products
         Sleep                  2s
         ClickText              Add to cart
         ClickText              Continue shopping     anchor=Cart summary
+        Sleep                  2s
         clicktext              Products              anchor=General
     END
