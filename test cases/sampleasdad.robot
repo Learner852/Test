@@ -3,7 +3,7 @@
 #
 
 *** Settings ***
-Resource                 Resources/common.robot
+Resource                 ../Resources/common.robot
 
 Library                  QWeb
 
