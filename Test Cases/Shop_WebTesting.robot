@@ -27,3 +27,5 @@ Add to cart and buy the products
         clicktext         Products                    anchor=General
     END
     Log List              ${product_list}
+    ClickElement          xpath=//*[.\='shopping_cart']
+    Get From List         
