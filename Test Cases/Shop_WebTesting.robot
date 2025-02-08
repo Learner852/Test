@@ -26,3 +26,4 @@ Add to cart and buy the products
         Sleep             2s
         clicktext         Products                    anchor=General
     END
+    Log List              ${product_list}
