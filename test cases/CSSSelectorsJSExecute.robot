@@ -9,7 +9,7 @@ Library                  QWeb
 
 *** Test Cases ***
 
-sampleasdad
+ExecuteJavascriptTestCase
     [Documentation]      Test Case created using the QEditor
     OpenBrowser          about:blank                 chrome
     GoTo                 https://qentinelqi.github.io/shop/
