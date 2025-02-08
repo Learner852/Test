@@ -33,3 +33,4 @@ Add to cart and buy the products
         ${temp}=        Get From List                  ${product_list}    ${index-1}
         VerifyText      ${temp}
     END        
+     
